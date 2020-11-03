@@ -1,0 +1,25 @@
+
+{
+    "comment" : "This file is used to help set default values when using the dotnet CLI extension Amazon.ElasticBeanstalk.Tools. For more information run \"dotnet eb --help\" from the project root.",
+    "profile" : "user4proogram",
+    "region"  : "us-east-2",
+    "application" : "Lab3ArshdeepJashanjot",
+    "environment" : "moviesnet-dev",
+    "cname"       : "moviesnet-dev",
+    "solution-stack" : "64bit Windows Server Core 2019 v2.5.10 running IIS 10.0",
+    "environment-type" : "SingleInstance",
+    "instance-profile" : "aws-elasticbeanstalk-ec2-role",
+    "service-role"     : "aws-elasticbeanstalk-service-role",
+    "health-check-url" : "/",
+    "instance-type"    : "t2.micro",
+    "key-pair"         : "j161",
+    "iis-website"      : "Default Web Site",
+    "app-path"         : "/",
+    "enable-xray"      : false,
+    "configuration"    : "Debug",
+    "framework"        : "netcoreapp3.1",
+    "self-contained"   : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-093862d7e0d74e490,sg-0829e67a461575737\";\"aws:ec2:vpc,Subnets\"=\"subnet-0df8ce4708a7106ff,subnet-082363dde70d88543,subnet-04c93cc84ccfdd949\"",
+    "proxy-server"         : "nginx"
+}

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Movie>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @*@Html.ActionLink("Upload", "Upload", "Home", null, new { @class = "nav nav-link" })*@
+    <h1 class="display-4">List of Movies</h1>
+    <div>
+        <div>
+            @if (Model!=null) 
+            {
+                @foreach (Movie m in Model)
+                {
+                    <a href="@m.url" class="badge p-xl-0">@m.name</a>
+                }
+            }
+        </div>
+     </div>
+</div>

@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Upload Movie";
+}
+<div class="col-md-10 offset-md-1">
+    @if (TempData["message"] != null)
+    {
+        <div class="alert-success">
+            <p><strong>Message: </strong> @TempData["message"].ToString()</p>
+        </div>
+    }
+    <form enctype="multipart/form-data" asp-action="UploadMovie" asp-controller="Home" method="post">
+        <div class="form-row">
+            <label class="col-form-label-lg">UPLOAD</label>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="doc" class="" data-browse="Browse" lang="es"></label>
+                    <input type="file" class="form-control-file" id="doc" name="document" required />
+
+
+                </div>
+            </div>
+        </div>
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Upload</button>
+        </div>
+    </form>
+</div>
